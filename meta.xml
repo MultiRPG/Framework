@@ -1,0 +1,24 @@
+<meta>
+
+    <!-- Clientside scripts -->
+    <script src="client/fonts.lua" type="client" cache="false" />
+    <script src="client/events.lua" type="client" cache="false" />
+    <script src="client/renote_events.lua" type="client" cache="false" />
+    <script src="client/gui.lua" type="client" cache="false" />
+
+    <!-- DX library -->
+    <script src="dxlib/lib.lua" type="client" cache="false" />
+
+    <!-- Serverside scripts -->
+    <script src="server/events.lua" type="server" />
+    <script src="server/renote_events.lua" type="server" />
+
+    <!-- Shared scripts -->
+    <script src="client/cache.lua" type="client" cache="false" />
+    <script src="client/utils.lua" type="client" cache="false" />
+
+    <!-- Assets - Images -->
+
+    <!-- Assets - Fonts -->
+
+</meta>
