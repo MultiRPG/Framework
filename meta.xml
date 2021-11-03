@@ -14,8 +14,8 @@
     <script src="server/remote_events.lua" type="server" />
 
     <!-- Shared scripts -->
-    <script src="client/cache.lua" type="shared" cache="false" />
-    <script src="client/utils.lua" type="shared" cache="false" />
+    <script src="shared/cache.lua" type="shared" cache="false" />
+    <script src="shared/utils.lua" type="shared" cache="false" />
 
     <!-- Assets - Images -->
 
