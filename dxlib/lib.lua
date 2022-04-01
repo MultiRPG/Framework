@@ -2,7 +2,7 @@
     Resource: MultiRPG
     Type: Clientside
     Developers: Inder00 <admin@multirpg.pl>
-    (©) 2021 <admin@multirpg.p>. All rights reserved.
+    (©) 2022 <admin@multirpg.p>. All rights reserved.
 ]]--
 
 -- Source: https://forum.mtasa.com/topic/111895-help-rounded-border/?do=findComment&comment=931629

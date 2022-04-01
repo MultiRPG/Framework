@@ -2,7 +2,7 @@
     Resource: MultiRPG
     Type: Clientside
     Developers: Inder00 <admin@multirpg.pl>
-    (©) 2021 <admin@multirpg.p>. All rights reserved.
+    (©) 2022 <admin@multirpg.p>. All rights reserved.
 ]]--
 
 -- List of events

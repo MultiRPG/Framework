@@ -2,7 +2,7 @@
     Resource: MultiRPG
     Type: Shared
     Developers: Inder00 <admin@multirpg.pl>
-    (©) 2021 <admin@multirpg.p>. All rights reserved.
+    (©) 2022 <admin@multirpg.p>. All rights reserved.
 ]]--
 
 -- check mouse is mouse in specified area
@@ -43,8 +43,13 @@ end
 
 -- format number
 -- Source: https://wiki.multitheftauto.com/wiki/FormatNumber
-function formatNumber(number, sep)
-	assert(type(tonumber(number))=="number", "Bad argument @'formatNumber' [Expected number at argument 1 got "..type(number).."]")
-	assert(not sep or type(sep)=="string", "Bad argument @'formatNumber' [Expected string at argument 2 got "..type(sep).."]")
-	return tostring(number):reverse():gsub("%d%d%d","%1%"..(sep and #sep>0 and sep or ",")):reverse()
+function formatNumber(amount, spacer)
+	if not spacer then
+		spacer = ","
+	end
+	
+	amount = math.floor(amount)
+	
+	local left, num, right = string.match(tostring(amount), "^([^%d]*%d)(%d*)(.-)$")
+	return left .. (num:reverse():gsub("(%d%d%d)", "%1" .. spacer):reverse()) .. right
 end

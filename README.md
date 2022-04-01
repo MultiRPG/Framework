@@ -6,9 +6,9 @@ Finally, I am glad to provide the `MTA Framework`, and everyone is welcome to ad
 
 # Usage 🖌️
 - FONTS
-    - Fonts can be called anywhhere on client side, by default they are not allocated in memory until they are called with a function - if the type and size is correct the font is returned and allocates to memory, when the font is returned from memory - they are not created again.
-    -  Fonts can be delocated from memory by calling `FONTS.deleteAllFonts()`
-    - Fonts can be easily added in `fonts.lua` file by scheme:.
+    - Fonts can be called anywhere on client side, by default they are not allocated in memory until they are called with a function - if the type and size is correct the font is returned and allocates to memory, when the font is returned from memory - they are not created again.
+    - Fonts can be delocated from memory by calling `FONTS.deleteAllFonts()`
+    - Fonts can be easily added in `fonts.lua` file by scheme:
         ```lua
         local fontTypes = {
             [ name ] = path, -- font type accesed by FONTS[ size ].TYPE_HERE
@@ -17,6 +17,11 @@ Finally, I am glad to provide the `MTA Framework`, and everyone is welcome to ad
             ["light"] = "assets/fonts/Roboto-Light.ttf", -- FONTS[ 12 ].light
         }
         ```
+- TEXTURES
+    - Textures can be called anywhere on client side, by default they are not allocated in memory until they are called with a function.
+    - Textures are automatically delocated from memory if they are not called for 10 seconds.
+    - Textures can delocated from memory by calling `TEXTURES.deleteAllTextures()`
+    - Textures can be easily called using `TEXTURES[ path ]` for example `TEXTURES[ "assets/images/background.png" ]`
 - Events (eg. `onClientVehicleEnter`)
     - Events can be added easily in `events.lua` file by scheme:
         ```lua
@@ -63,17 +68,6 @@ Finally, I am glad to provide the `MTA Framework`, and everyone is welcome to ad
 
 - GUI:
     - `gui.lua` contains values `sx` - screen width, `sy` - screen height, `sxh` - half of screen width, `syh` - half of height width, `zoom` - zoom for scaling purposes (player resolution divided by fullhd resolution). These values can be used anywhere on client side code.
-
-# Branching 🔗
-- Branch `main` contains all of above features.
-- Branch `dx` contains only dx library features.
-- Branch `fonts` containts fonts features.
-- Branch `events` contains events and remote event features.
-- Branch `utils` contains utils features.
-- Branch `fonts+events` contains fonts, events and remote event features.
-- Branch `dx+utils` contains dx library and utils features.
-- Branch `dx+fonts` contains dx library and fonts features.
-- Branch `dx+utils+fonts` contains dx library, utils and fonts features.
 
 # Contribution ❤️
 

@@ -2,6 +2,7 @@
 
     <!-- Clientside scripts -->
     <script src="client/fonts.lua" type="client" cache="false" />
+    <script src="client/textures.lua" type="client" cache="false" />
     <script src="client/events.lua" type="client" cache="false" />
     <script src="client/remote_events.lua" type="client" cache="false" />
     <script src="client/gui.lua" type="client" cache="false" />
